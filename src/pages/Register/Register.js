@@ -1,6 +1,6 @@
 import FormInput from "../../components/FormInput/FormInput";
 import './Register.css';
-import {useRef, useState} from "react";
+import {useState} from "react";
 
 function Register(){
 
@@ -107,8 +107,10 @@ function Register(){
                         <select className="custom-select my-1 mr-sm-2 col-md-12 form-select border-dark" value={accountType} onChange={e=>setAccountType(e.target.value)}>
                             <option value="STUDENT">Student</option>
                             <option value="ADMIN">Admin</option>
+
                         </select>
                     </div>
+
                     <button className="btn btn-primary" type="submit">Register</button>
 
                 </form>
